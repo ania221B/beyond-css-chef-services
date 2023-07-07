@@ -1,0 +1,7 @@
+@use '../abstracts/' as *;
+
+.heading-primary {
+  font-family: $ff-secondary;
+  font-size: fs(800);
+  font-weight: $fw-400;
+}

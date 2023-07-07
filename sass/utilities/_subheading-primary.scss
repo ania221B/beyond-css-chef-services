@@ -1,0 +1,9 @@
+@use '../abstracts/' as *;
+
+.subheading-primary {
+  font-family: $ff-primary;
+  font-size: fs(600);
+  font-weight: $fw-400;
+  text-transform: uppercase;
+  line-height: 1.2;
+}

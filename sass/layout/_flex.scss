@@ -1,0 +1,8 @@
+.flex {
+  display: flex;
+  gap: var(--gap-space, 1.5rem);
+
+  &[data-type='centered'] {
+    justify-content: center;
+  }
+}

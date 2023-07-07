@@ -1,0 +1,6 @@
+@use '../abstracts/' as *;
+
+.hero {
+  padding-block: min(30vh, 20rem);
+  background-image: url('../assets/hero-bg.jpg');
+}

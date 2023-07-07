@@ -1,0 +1,7 @@
+@use '../abstracts/' as *;
+
+.heading-xl {
+  font-family: $ff-secondary;
+  font-size: fs(900);
+  font-weight: $fw-400;
+}

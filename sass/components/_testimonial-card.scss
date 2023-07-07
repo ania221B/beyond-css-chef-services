@@ -1,0 +1,37 @@
+@use '../abstracts/' as *;
+
+.testimonial {
+  box-shadow: 0 size(8) size(12) rgba(clr(neutral, 400), 0.4);
+
+  &__content {
+    position: relative;
+    isolation: isolate;
+  }
+
+  blockquote {
+    padding-block: clamp(size(20), 4vw, size(80));
+    padding-inline: clamp(size(20), 4vw, size(80));
+    text-align: center;
+  }
+
+  blockquote::after {
+    content: url('../../assets/quote.svg');
+    position: absolute;
+    inset: 2rem auto auto 2rem;
+    color: clr(neutral, 400);
+    width: 9em;
+    aspect-ratio: 1;
+    z-index: -1;
+  }
+
+  figcaption {
+    padding-block: size(16);
+    padding-inline: size(16);
+    background-color: clr(neutral, 200);
+    text-align: center;
+  }
+
+  figcaption:last-child {
+    font-size: fs(300);
+  }
+}

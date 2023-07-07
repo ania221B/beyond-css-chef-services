@@ -1,0 +1,16 @@
+.grid {
+  display: grid;
+  gap: var(--gap-space, 1.5rem);
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  justify-items: center;
+
+  &[data-col='2'] {
+    --gap-space: 3rem;
+  }
+  &[data-col='3'] {
+    grid-template-columns: repeat(auto-fit, minmax(16.75rem, 1fr));
+  }
+  &[data-col='4'] {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+}

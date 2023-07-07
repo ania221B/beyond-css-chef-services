@@ -1,0 +1,32 @@
+@use '../abstracts/' as *;
+
+.product-card {
+  $parent: &;
+  position: relative;
+  overflow: hidden;
+
+  &__content {
+    position: absolute;
+    inset: auto 0 0 0;
+    padding-block: size(32);
+    padding-inline: size(32);
+    background-color: rgba(clr(neutral, 900), 0.8);
+    color: clr(neutral, 100);
+    transform: translateY(100%);
+    transition: transform 450ms ease-in-out;
+
+    @supports (backdrop-filter: blur(2rem)) {
+      background-color: rgba(clr(neutral, 900), 0.5);
+      backdrop-filter: blur(0.25rem);
+    }
+
+    #{$parent}:hover &,
+    #{$parent}:focus & {
+      transform: translateY(0);
+    }
+  }
+
+  .heading-secondary {
+    color: clr(neutral, 100);
+  }
+}

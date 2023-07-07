@@ -1,0 +1,40 @@
+@use '../abstracts/' as *;
+
+.primary-nav {
+  &__list {
+    --gap-space: 3rem;
+  }
+  &__link {
+    $parent: &;
+    display: inline-block;
+    font-family: $ff-secondary;
+    font-size: fs(700);
+    text-decoration: none;
+    color: clr(neutral, 100);
+    position: relative;
+    isolation: isolate;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: auto 0 size(8) * -0.75 0;
+      width: size(8);
+      height: size(8);
+      margin-inline: auto;
+      background-color: clr(primary, 500);
+      border-radius: 50%;
+      opacity: 0;
+      transform: translateY(size(8));
+      transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+    }
+
+    &:hover {
+      color: clr(primary, 500);
+    }
+
+    &:hover::after {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

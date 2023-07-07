@@ -1,0 +1,7 @@
+@use '../abstracts/' as *;
+
+.bg-image {
+  background-color: clr(neutral, 900);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

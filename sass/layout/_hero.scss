@@ -1,6 +1,18 @@
 @use '../abstracts/' as *;
 
 .hero {
-  padding-block: min(30vh, 20rem);
+  padding-block: min(40vh, size(320));
   background-image: url('../assets/hero-bg.jpg');
+
+  h2 {
+    margin-top: 2rem;
+
+    @include mq(medium) {
+      margin-top: 0;
+    }
+  }
+
+  .grid-split {
+    --gap-space: #{size(16)};
+  }
 }

@@ -1,0 +1,13 @@
+@use '../abstracts/' as *;
+
+.grid-split {
+  display: grid;
+  grid-auto-flow: row;
+  gap: var(--gap-space, size(24));
+  place-content: center;
+  place-items: center;
+
+  @include mq(medium) {
+    grid-auto-flow: column;
+  }
+}

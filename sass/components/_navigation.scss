@@ -2,7 +2,11 @@
 
 .primary-nav {
   &__list {
-    --gap-space: 3rem;
+    --gap-space: #{size(4)};
+
+    @include mq(medium) {
+      --gap-space: #{size(48)};
+    }
   }
   &__link {
     $parent: &;

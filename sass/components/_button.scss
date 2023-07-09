@@ -1,0 +1,85 @@
+@use '../abstracts' as *;
+
+.button {
+  display: grid;
+  place-content: center;
+  text-decoration: none;
+  padding-block: 1.125em;
+  padding-inline: 2em;
+  font-weight: $fw-700;
+  text-transform: uppercase;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  &[type='button'] {
+    background: none;
+    border: 0;
+    cursor: pointer;
+  }
+
+  &[data-button='primary'] {
+    background-color: clr(primary, 400);
+    color: clr(neutral, 900);
+  }
+  &[data-button='secondary'] {
+    --border-size: 0.375rem;
+    padding-block: calc(1.125em - var(--border-size));
+    padding-inline: calc(2em - var(--border-size));
+    border: solid var(--border-size) clr(neutral, 100);
+    color: clr(neutral, 100);
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 300ms ease-in-out;
+    z-index: -1;
+  }
+  &[data-button='primary']::after {
+    background-color: clr(primary, 500);
+  }
+
+  &[data-button='secondary']::after {
+    background-color: clr(neutral, 100);
+  }
+
+  &:hover::after,
+  &:focus::after {
+    transform: translate(-50%, -50%) scale(30);
+  }
+
+  span {
+    display: block;
+    position: relative;
+
+    &::after {
+      content: attr(data-content);
+      display: block;
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 300ms ease-in-out;
+    }
+  }
+
+  &[data-button='primary'] span::after {
+    color: clr(neutral, 100);
+  }
+
+  &[data-button='secondary'] span::after {
+    color: clr(primary, 500);
+  }
+
+  &:hover span::after,
+  &:focus span::after {
+    opacity: 1;
+  }
+}

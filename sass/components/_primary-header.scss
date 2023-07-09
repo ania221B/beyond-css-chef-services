@@ -3,11 +3,7 @@
 .primary-header {
   position: absolute;
   inset: 0 0 auto 0;
-  padding-block: size(36);
-
-  @include mq(medium) {
-    padding-block: size(28);
-  }
+  padding-block-start: size(24);
 
   & > * {
     display: flex;

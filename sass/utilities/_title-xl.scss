@@ -1,7 +1,8 @@
 @use '../abstracts/' as *;
 
-.heading-primary {
+.title-xl {
   font-family: $ff-secondary;
-  font-size: fs(800);
+  font-size: fs(900);
   font-weight: $fw-400;
+  line-height: 1.1;
 }

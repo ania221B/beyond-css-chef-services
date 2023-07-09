@@ -1,0 +1,7 @@
+@use '../abstracts/' as *;
+
+.features {
+  & > * {
+    --gap-space: #{size(36)};
+  }
+}

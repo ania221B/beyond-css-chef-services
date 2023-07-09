@@ -1,8 +1,8 @@
 .container {
-  width: min(100% - 4rem, 100rem);
+  width: min(100% - 4rem, 80rem);
   margin-inline: auto;
 
-  &[data-type='small'] {
-    width: min(100% - 4rem, 72rem);
+  &[data-container='small'] {
+    width: min(100% - 4rem, 65rem);
   }
 }

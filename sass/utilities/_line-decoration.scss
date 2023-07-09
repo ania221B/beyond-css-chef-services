@@ -5,11 +5,15 @@
 
   &::after {
     content: '';
-    position: absolute;
-    inset: auto 0 size(36) * -1 0;
-    margin-inline: auto;
+    display: block;
+    margin-block-start: size(36);
+
     width: 10rem;
     height: 1px;
-    background-color: clr(neutral, 400);
+    background-color: currentColor;
+  }
+
+  &.centered-text::after {
+    margin-inline: auto;
   }
 }

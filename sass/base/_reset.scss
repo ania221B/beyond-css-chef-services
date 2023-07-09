@@ -19,14 +19,6 @@ dd {
   margin: 0;
 }
 
-/* Removes unnecessary space caused by line height */
-h1,
-h2,
-h3,
-h4 {
-  line-height: 1.1;
-}
-
 /* Removes default list styling on ul, ol elements with a list role */
 ul:where([role='list']),
 ol:where([role='list']) {
@@ -40,13 +32,6 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-/* Sets core body defaults */
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
 /* Gives default styling to a elements that don't have a class */
 a:not([class]) {
   text-decoration-skip-ink: auto;
@@ -54,7 +39,8 @@ a:not([class]) {
 
 /* Makes images easier to work with */
 img,
-picture {
+picture,
+svg {
   max-width: 100%;
   display: block;
   object-fit: cover;

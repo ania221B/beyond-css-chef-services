@@ -1,0 +1,20 @@
+@use '../abstracts/' as *;
+
+.about {
+  & > * {
+    --gap-space: #{size(48)};
+  }
+
+  .image-container {
+    max-width: 37.5rem;
+    margin-inline: auto;
+  }
+
+  @include mq(large) {
+    .image-container {
+      transform: translateY(-10rem);
+      max-width: 37.5rem;
+      margin-inline: auto;
+    }
+  }
+}

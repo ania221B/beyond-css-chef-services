@@ -32,13 +32,14 @@
       transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: clr(primary, 500);
-    }
 
-    &:hover::after {
-      opacity: 1;
-      transform: translateY(0);
+      &::after {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   }
 }

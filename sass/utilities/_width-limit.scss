@@ -1,4 +1,9 @@
-.width-limit {
-  max-width: 40ch;
+.width-limit-1 {
+  max-width: 45ch;
+  margin-inline: auto;
+}
+
+.width-limit-2 {
+  max-width: 31.25rem;
   margin-inline: auto;
 }

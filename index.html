@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chef Services</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,8 +17,9 @@
   <header class="primary-header">
     <div class="container">
       <picture class="logo">
-        <img src="assets/logo.svg">
+        <img src="assets/logo.svg" alt="Chef John Wellington">
       </picture>
+
       <nav class="primary-nav">
 
         <ul class="primary-nav__list grid-split margin-block-start-28" role="list">
@@ -37,68 +38,67 @@
   </header>
   <main>
     <section class="hero bg-image">
-      <div class="container" data-type="small">
-        <h2 class="heading-xl clr-neutral-100 centered-text">Homecooked meals
-          delivered straight to your door</h2>
-        <div class="grid-split margin-block-start-36" data-type="centered">
-          <a href="#" class="link-button" data-type="primary"><span data-content="Place order" aria-hidden="true"></span>Place order</a>
-          <a href="#" class="link-button" data-type="secondary"><span data-content="More info" aria-hidden="true">More info</span></a>
+      <div class="container" data-container="small">
+        <h1 class="title-xl clr-neutral-100 centered-text">Homecooked meals
+          delivered straight to your door</h1>
+        <div class="grid-split margin-block-start-36" data-flex="centered">
+          <button type="button" class="button" data-button="primary"><span data-content="Place order" aria-hidden="true"></span>Place order</button>
+          <a href="#" class="button" data-button="secondary"><span data-content="More info" aria-hidden="true">More info</span></a>
         </div>
       </div>
-      <!-- <picture>
-        <source src="assets/hero-bg.avif" type="image/avif">
-        <source src="assets/hero-bg.webp" type="image/webp">
-        <img src="assets/hero-bg.jpg" alt="">
-      </picture> -->
     </section>
 
     <section id="about" class="about">
-      <div class="container grid" data-type="small" data-col="2">
+      <div class="container grid" data-container="small">
         <div class="image-container">
-          <picture>
+          <picture class="shadow-1">
             <source src="assets/about.avif" type="image/avif">
             <source src="assets/about.webp" type="image/webp">
-            <img src="assets/about.jpg" alt="">
+            <img src="assets/about.jpg" alt="several plates of nicely presented food on a white tablecloth seen from above">
           </picture>
         </div>
         <div class="content-container">
           <header>
-            <h2 class="heading-primary clr-primary-500">This is a nice big heading</h2>
-            <p class="subheading-primary">This is a subhead which mentions some interesing things</p>
+            <h2 class="title clr-primary-500">Amazing food without the hassle</h2>
+            <p class="subtitle">We do all the work, so all you have to do is sit back and enjoy</p>
           </header>
           <div class="margin-block-start-32">
-            <h3 class="heading-secondary">This introduces the following text</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas egestas dignissim. Quisque pretium nisi a rhoncus posuere.
-              Ut posuere mauris nisl, sed consequat orci ultrices ac. Fusce et elit et nisl eleifend hendrerit. Nulla ac aliquam mauris. Aenean quam lacus, auctor eu lacus vitae, egestas elementum turpis. Morbi sed justo justo. </p>
+
+            <h3 class="lead">It's ready to go</h3>
+            <div class="flow">
+              <p>Whether it's for a romantic evening with your significant other or if you're hosting a large party and need food for a big group, we're here to help!</p>
+              <p>We can cater to whatever your needs are, and ensure that our delicious food is delivered at the perfect moment, fresh, hot and ready to eat ecactly weh you need it to be there.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="features bg-neutral-200">
-      <div class="container" data-type="small">
+      <div class="container" data-container="small">
 
         <header class="centered-text line-decoration">
-          <h2 class="heading-primary clr-primary-500">This is a nice big heading</h2>
-          <p class="subheading-primary width-limit">This is a subhead which mentions some interesing things</p>
+          <h2 class="title clr-primary-500">We make great food</h2>
+          <p class="subtitle width-limit-1">Cooking is our passion, with quality and freshness being of the utmost importance</p>
         </header>
 
-        <ul class="feature-list grid margin-block-start-80" data-col="4" role="list">
+        <ul class="feature-list grid margin-block-start-80" data-columns="4" role="list">
           <li class="centered-text">
-            <h3 class="heading-secondary">This is a subtitle</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas egestas dignissim. Quisque pretium nisi a rhoncus posuere.</p>
+            <h3 class="lead">Fresh ingredients</h3>
+            <p>We take food seriously, and the first thing to making great food is using fresh ingredients. If the indredients don't meet out standard, we don't use them.
+            </p>
           </li>
           <li class="centered-text">
-            <h3 class="heading-secondary">This is a subtitle</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas egestas dignissim. Quisque pretium nisi a rhoncus posuere.</p>
+            <h3 class="lead">Personal chef</h3>
+            <p>Chef Wellington is a professionaly trainded chef who's worked in top kitchens around the world.</p>
           </li>
           <li class="centered-text">
-            <h3 class="heading-secondary">This is a subtitle</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas egestas dignissim. Quisque pretium nisi a rhoncus posuere.</p>
+            <h3 class="lead">Ready for you</h3>
+            <p>Stop using services where you have to re-heat your food. We get it to your door ready to eat, without sacrificing any quality at all.</p>
           </li>
           <li class="centered-text">
-            <h3 class="heading-secondary">This is a subtitle</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas egestas dignissim. Quisque pretium nisi a rhoncus posuere.</p>
+            <h3 class="lead">Made with love</h3>
+            <p>Food is our passion, and we infuse that love and passion into every single plate that we make and deliver straight to your home.</p>
           </li>
         </ul>
       </div>
@@ -107,8 +107,8 @@
     <section id="meals" class="meals bg-image">
       <div class="container">
         <header class="centered-text clr-neutral-100 line-decoration">
-          <h2 class="heading-primary">This is a nice big heading</h2>
-          <p class="subheading-primary width-limit">This is a subhead which mentions some interesing things</p>
+          <h2 class="title">Some of our meals</h2>
+          <p class="subtitle width-limit-1">Here are a few of our delicious, home-cooked meals that are sure to please your taste buds</p>
         </header>
 
         <ul class="product-cards grid margin-block-start-80" role="list">
@@ -116,103 +116,94 @@
             <picture>
               <source src="assets/meal-01.avif" type="image/avif">
               <source src="assets/meal-01.webp" type="image/webp">
-              <img src="assets/meal-01.jpg" alt="">
+              <img src="assets/meal-01.jpg" alt="A plate with loads of vegetables and a piece of salmon on top decorated with a portion of veggies">
             </picture>
             <div class="product-card__content">
-              <h3 class="heading-secondary">About this meal</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas egestas dignissim.</p>
+              <h3 class="lead">Pan-seared salmon and veggies</h3>
+              <p>This pan-seared salmon filet is served on top of a giant bed of delicious vegetables.</p>
             </div>
           </li>
           <li class="product-card">
             <picture>
               <source src="assets/meal-02.avif" type="image/avif">
               <source src="assets/meal-02.webp" type="image/webp">
-              <img src="assets/meal-02.jpg" alt="">
+              <img src="assets/meal-02.jpg" alt="Several tortillas with beef and green vegetables being prepared">
             </picture>
             <div class="product-card__content">
-              <h3 class="heading-secondary">About this meal</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas egestas dignissim.</p>
+              <h3 class="lead">Beef & green veggie tortillas</h3>
+              <p>Tortillas stuffed with spicy beef and green salad make a simple but tasy meal.</p>
             </div>
           </li>
           <li class="product-card">
             <picture>
               <source src="assets/meal-03.avif" type="image/avif">
               <source src="assets/meal-03.webp" type="image/webp">
-              <img src="assets/meal-03.jpg" alt="">
+              <img src="assets/meal-03.jpg" alt="A pan with clams being tossed during preparation">
             </picture>
             <div class="product-card__content">
-              <h3 class="heading-secondary">About this meal</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas egestas dignissim.</p>
+              <h3 class="lead">Wok-tossed clams</h3>
+              <p>The black bean sauce is the star here. Garlic, ginger and scallion give the dish summer vibes.</p>
             </div>
           </li>
         </ul>
       </div>
-      <!-- <picture>
-        <source src="assets/meals-bg.avif" type="image/avif">
-        <source src="assets/meals-bg.webp" type="image/webp">
-        <img src="assets/meals-bg.jpg" alt="">
-      </picture> -->
+
     </section>
 
     <section id="testimonials" class="testimonials">
       <div class="container">
-        <h2 class="heading-primary clr-primary-500 centered-text">What our clients are saying about us</h2>
+        <h2 class="title clr-primary-500 centered-text">What our clients are saying about us</h2>
 
-        <ul class="testimonial-list grid margin-block-start-80" data-col="3" role="list">
+        <ul class="testimonial-list grid margin-block-start-80" role="list">
           <li class="testimonial">
             <picture>
               <source src="assets/testimonial-01.avif" type="image/avif">
               <source src="assets/testimonial-01.webp" type="image/webp">
-              <img src="assets/testimonial-01.jpg" alt="">
+              <img src="assets/testimonial-01.jpg" alt="smiling man with his arms crossed standing on a field">
             </picture>
+
             <div class="testimonial__content">
-              <figure>
-                <blockquote>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas egestas dignissim. Quisque pretium nisi a rhoncus posuere. Ut posuere mauris nisl, sed consequat orci ultrices ac. Fusce et elit et nisl eleifend hendrerit. Nulla ac aliquam mauris. Aenean quam lacus, auctor eu lacus.</p>
-                </blockquote>
-                <figcaption>
-                  <p class="clr-primary-500 fw-bold fs-500">John Deer</p>
-                  <p>Manager at FoodCo.</p>
-                </figcaption>
-              </figure>
+              <p>John Wellington and his team make the most amazing food. Every single time I've ordered, I've been blown away by the quality. You can tell they only use fresh ingredients and put a lot of love into every single meal they make! You really can't ask for anything more, it's always fantastic.</p>
+            </div>
+
+            <div class="testimonial__footer">
+              <p class="clr-primary-500 fw-bold fs-500">John Deer</p>
+              <p>Lover of good food</p>
             </div>
           </li>
+
           <li class="testimonial">
             <picture>
               <source src="assets/testimonial-02.avif" type="image/avif">
               <source src="assets/testimonial-02.webp" type="image/webp">
-              <img src="assets/testimonial-02.jpg" alt="">
-
+              <img src="assets/testimonial-02.jpg" alt="smiling woman looking up and holding a mobile phone">
             </picture>
+
             <div class="testimonial__content">
-              <figure>
-                <blockquote>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas egestas dignissim. Quisque pretium nisi a rhoncus posuere. Ut posuere mauris nisl, sed consequat orci ultrices ac. Fusce et elit et nisl eleifend hendrerit. Nulla ac aliquam mauris. Aenean quam lacus, auctor eu lacus.</p>
-                </blockquote>
-                <figcaption>
-                  <p class="clr-primary-500 fw-bold fs-500">John Deer</p>
-                  <p>Manager at FoodCo.</p>
-                </figcaption>
-              </figure>
+              <p>I'm so happy that I found John Wellington! The food is on par with some of the best restaurants I've ever eaten at, but from the comfort of my own home. Every single time I order, it's mouth-wateringly delicious.</p>
+            </div>
+
+            <div class="testimonial__footer">
+              <p class="clr-primary-500 fw-bold fs-500">Marie Condo</p>
+              <p>Foodie</p>
             </div>
           </li>
+
           <li class="testimonial">
             <picture>
               <source src="assets/testimonial-03.avif" type="image/avif">
               <source src="assets/testimonial-03.webp" type="image/webp">
-              <img src="assets/testimonial-03.jpg" alt="">
+              <img src="assets/testimonial-03.jpg" alt="woman eating a sandwich">
 
             </picture>
+
             <div class="testimonial__content">
-              <figure>
-                <blockquote>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas egestas dignissim. Quisque pretium nisi a rhoncus posuere. Ut posuere mauris nisl, sed consequat orci ultrices ac. Fusce et elit et nisl eleifend hendrerit. Nulla ac aliquam mauris. Aenean quam lacus, auctor eu lacus.</p>
-                </blockquote>
-                <figcaption>
-                  <p class="clr-primary-500 fw-bold fs-500">John Deer</p>
-                  <p>Manager at FoodCo.</p>
-                </figcaption>
-              </figure>
+              <p>From simple meals to some of the most extravagant things I've ever eaten, John and his team always deliver. Every time I order something new, I just can't wait for it to be delivered and I know how mouth-wateringly delicious it's going to be. If you like good food, you have to give it a try!</p>
+            </div>
+
+            <div class="testimonial__footer">
+              <p class="clr-primary-500 fw-bold fs-500">Sam Reinhert</p>
+              <p>Good food enthusiast</p>
             </div>
           </li>
         </ul>
@@ -222,7 +213,7 @@
   </main>
   <footer class="bg-neutral-900 clr-neutral-100 centered-text">
     <div class="container">
-      <p>A good place for some basic footer infromation</p>
+      <p class="fw-bold">Homecooked meals delivered straight to your door</p>
       <p>©2022 Persronal Chef Services</p>
       <p>555 Boulevard Anywhere, Montreal, Quebec, J1S 1S9 | 123-555-1234</p>
 

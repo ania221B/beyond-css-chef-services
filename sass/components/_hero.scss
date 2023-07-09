@@ -1,11 +1,11 @@
 @use '../abstracts/' as *;
 
 .hero {
-  padding-block: min(40vh, size(320));
+  padding-block: min(25vh, size(320));
   background-image: url('../assets/hero-bg.jpg');
 
-  h2 {
-    margin-top: 2rem;
+  .title-xl {
+    margin-top: 1.5em;
 
     @include mq(medium) {
       margin-top: 0;
